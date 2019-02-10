@@ -10,6 +10,7 @@ public class DiDemoApplication {
 
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(DiDemoApplication.class, args);
-        context.getBean(GreetingController.class).greet();
+
+        System.out.println(context.getBean(GreetingController.class).sayHello());
     }
 }

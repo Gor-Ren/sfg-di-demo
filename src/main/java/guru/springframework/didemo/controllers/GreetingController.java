@@ -13,7 +13,7 @@ public class GreetingController {
         this.greetingService = greetingService;
     }
 
-    public void greet() {
-        greetingService.sayHello();
+    public String sayHello() {
+        return greetingService.sayGreeting();
     }
 }
